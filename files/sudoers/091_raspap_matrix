@@ -1,0 +1,5 @@
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl start matrix.service
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl stop matrix.service
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl status matrix.service
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl enable matrix.service
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl disable matrix.service
