@@ -100,7 +100,7 @@ class MatrixPlugin implements PluginInterface
              */
             if (!RASPI_MONITOR_ENABLED) {
                 if (isset($_POST['saveSettings'])) {
-                    if (isset($_POST['onboot'])) {
+
                         // Validate user data
 
                         $onboot = (int)trim($_POST['onboot']);
@@ -131,7 +131,7 @@ class MatrixPlugin implements PluginInterface
                                 }
                             }
                         }
-                    }
+
 
                 } elseif (isset($_POST['startMatrixService'])) {
                     $status->addMessage('Attempting to start matrix.service', 'info');
