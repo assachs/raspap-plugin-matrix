@@ -148,7 +148,7 @@ class MatrixPlugin implements PluginInterface
                     }
                 }
 
-                exec("ps aux | grep -v grep | grep \"matrix.py\"", $output, $return);
+                exec("ps aux | grep -v grep | grep \"demo\"", $output, $return);
                 $this->setServiceStatus(!empty($output) ? "up" : "down");
 
                 exec("sudo systemctl status matrix.service", $output, $return);
